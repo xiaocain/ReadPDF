@@ -33,6 +33,7 @@ public class jcextest {
         logger.info("输入参数...."+name);
         String selectcustomerid = userService.selectcustomerid(name);
         logger.info("返回参数...."+name);
+        logger.info("返回参数...."+name);
         return selectcustomerid.toString();
 
         
