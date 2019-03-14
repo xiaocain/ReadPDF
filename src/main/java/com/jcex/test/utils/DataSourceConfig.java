@@ -14,7 +14,7 @@ import java.util.Map;
 public class DataSourceConfig {
 
     /**
-     * 数据源1
+     * 数据源1 prefix指定从application文件里读取的配置前缀名
      * @return
      */
     @Bean
@@ -24,7 +24,7 @@ public class DataSourceConfig {
     }
 
     /**
-     * 数据源1
+     * 数据源2 prefix指定从application文件里读取的配置前缀名
      * @return
      */
     @Bean

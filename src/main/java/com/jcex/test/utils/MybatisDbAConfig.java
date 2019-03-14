@@ -15,6 +15,9 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 
 import javax.sql.DataSource;
 
+/**
+ * 注意basePackages 为这个数据源指定dao位置 这个包下 都会使用这个数据源
+ */
 @Configuration
 @MapperScan(basePackages = {"com.jcex.test.dao.mysqlMapper"}, sqlSessionFactoryRef = "sqlSessionFactory1")
 public class MybatisDbAConfig {
@@ -28,7 +31,7 @@ public class MybatisDbAConfig {
     @Bean
     public SqlSessionFactory sqlSessionFactory1() throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
-        bean.setDataSource(ds1); // 使用titan数据源, 连接titan库
+        bean.setDataSource(ds1); // 使用xml设置的数据源, 连接数据库库
         //把这个数据源的sql的XML目录加入进去 否则找不到Mapper.xml文件
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         try {

@@ -1,331 +1,209 @@
-2019/02/19-15:42 [main] INFO  com.jcex.test.TestApplication- Starting TestApplication on YLMF-1804141658 with PID 113260 (D:\test\target\classes started by Administrator in D:\test)
-2019/02/19-15:42 [main] DEBUG com.jcex.test.TestApplication- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019/02/19-15:42 [main] INFO  com.jcex.test.TestApplication- No active profile set, falling back to default profiles: default
-2019/02/19-15:42 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
-2019/02/19-15:42 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
-2019/02/19-15:42 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
-2019/02/19-15:42 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
-2019/02/19-15:42 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
-2019/02/19-15:42 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
-2019/02/19-15:42 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$a5c079df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019/02/19-15:42 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df54bbb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019/02/19-15:42 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
-2019/02/19-15:42 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
-2019/02/19-15:42 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.14]
-2019/02/19-15:42 [main] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\java\jdk1.7\bin;D:\apache-cxf-3.2.5\bin;D:\java\jdk1.7\jre\binC:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\windows\system32\;C:\Program Files\TortoiseSVN\bin\;D:\apache-maven-3.5.4\bin;D:\mysql-8.0.12-winx64\bin;D:\Git\cmd;D:\Fiddler;.]
-2019/02/19-15:42 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
-2019/02/19-15:42 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2172 ms
-2019/02/19-15:42 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
-2019/02/19-15:42 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
-2019/02/19-15:42 [main] INFO  com.jcex.test.TestApplication- Started TestApplication in 4.657 seconds (JVM running for 5.547)
-2019/02/19-15:42 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019/02/19-15:42 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
-2019/02/19-15:42 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 20 ms
-2019/02/19-15:48 [main] INFO  com.jcex.test.TestApplication- Starting TestApplication on YLMF-1804141658 with PID 114128 (D:\test\target\classes started by Administrator in D:\test)
-2019/02/19-15:48 [main] DEBUG com.jcex.test.TestApplication- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019/02/19-15:48 [main] INFO  com.jcex.test.TestApplication- No active profile set, falling back to default profiles: default
-2019/02/19-15:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
-2019/02/19-15:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
-2019/02/19-15:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
-2019/02/19-15:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
-2019/02/19-15:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
-2019/02/19-15:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
-2019/02/19-15:48 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b33c1db7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019/02/19-15:48 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ecd05f89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019/02/19-15:48 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
-2019/02/19-15:48 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
-2019/02/19-15:48 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.14]
-2019/02/19-15:48 [main] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\java\jdk1.7\bin;D:\apache-cxf-3.2.5\bin;D:\java\jdk1.7\jre\binC:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\windows\system32\;C:\Program Files\TortoiseSVN\bin\;D:\apache-maven-3.5.4\bin;D:\mysql-8.0.12-winx64\bin;D:\Git\cmd;D:\Fiddler;.]
-2019/02/19-15:48 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
-2019/02/19-15:48 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1901 ms
-2019/02/19-15:48 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
-2019/02/19-15:48 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
-2019/02/19-15:48 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
-2019/02/19-15:48 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
-2019/02/19-15:48 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
-2019/02/19-15:48 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
-2019/02/19-15:48 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
-2019/02/19-15:48 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
-2019/02/19-15:48 [main] INFO  com.jcex.test.TestApplication- Started TestApplication in 4.083 seconds (JVM running for 4.788)
-2019/02/19-15:48 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019/02/19-15:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
-2019/02/19-15:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 5 ms
-2019/02/19-15:53 [http-nio-8080-exec-10] INFO  com.jcex.test.web.jcextest- 输入参数....156466
-2019/02/19-15:53 [http-nio-8080-exec-10] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
-2019/02/19-15:53 [http-nio-8080-exec-10] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- ==>  Preparing: SELECT DISTINCT top 1 serviceGUID FROM customer_interface WHERE reference_number=? 
-2019/02/19-15:53 [http-nio-8080-exec-10] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- ==> Parameters: 156466(String)
-2019/02/19-15:53 [http-nio-8080-exec-10] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- <==      Total: 0
-2019/02/19-15:53 [http-nio-8080-exec-10] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.jcex.test.web.jcextest.getreferenceNumber(jcextest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2019/02/19-15:54 [http-nio-8080-exec-1] INFO  com.jcex.test.web.jcextest- 输入参数....318122800211
-2019/02/19-15:54 [http-nio-8080-exec-1] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- ==>  Preparing: SELECT DISTINCT top 1 serviceGUID FROM customer_interface WHERE reference_number=? 
-2019/02/19-15:54 [http-nio-8080-exec-1] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- ==> Parameters: 318122800211(String)
-2019/02/19-15:54 [http-nio-8080-exec-1] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- <==      Total: 0
-2019/02/19-15:54 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.jcex.test.web.jcextest.getreferenceNumber(jcextest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2019/02/19-15:54 [http-nio-8080-exec-2] INFO  com.jcex.test.web.jcextest- 输入参数....{name}
-2019/02/19-15:54 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-2} inited
-2019/02/19-15:54 [http-nio-8080-exec-2] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==>  Preparing: SELECT customer_reference_number FROM csd_order WHERE shipper_hawbcode=? 
-2019/02/19-15:54 [http-nio-8080-exec-2] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==> Parameters: {name}(String)
-2019/02/19-15:54 [http-nio-8080-exec-2] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- <==      Total: 0
-2019/02/19-15:54 [http-nio-8080-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.jcex.test.web.jcextest.getUserInfo(jcextest.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2019/02/19-15:55 [http-nio-8080-exec-4] INFO  com.jcex.test.web.jcextest- 输入参数....{name}
-2019/02/19-15:55 [http-nio-8080-exec-4] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==>  Preparing: SELECT customer_reference_number FROM csd_order WHERE shipper_hawbcode=? 
-2019/02/19-15:55 [http-nio-8080-exec-4] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==> Parameters: {name}(String)
-2019/02/19-15:55 [http-nio-8080-exec-4] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- <==      Total: 0
-2019/02/19-15:55 [http-nio-8080-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.jcex.test.web.jcextest.getUserInfo(jcextest.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2019/02/19-15:55 [http-nio-8080-exec-3] INFO  com.jcex.test.web.jcextest- 输入参数....TEST891904144326893
-2019/02/19-15:55 [http-nio-8080-exec-3] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- ==>  Preparing: SELECT DISTINCT top 1 serviceGUID FROM customer_interface WHERE reference_number=? 
-2019/02/19-15:55 [http-nio-8080-exec-3] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- ==> Parameters: TEST891904144326893(String)
-2019/02/19-15:55 [http-nio-8080-exec-3] DEBUG com.jcex.test.dao.sqlserverMapper.CustomInterface.selectcustomerid- <==      Total: 1
-2019/02/19-15:58 [main] INFO  com.jcex.test.TestApplication- Starting TestApplication on YLMF-1804141658 with PID 92568 (D:\test\target\classes started by Administrator in D:\test)
-2019/02/19-15:58 [main] DEBUG com.jcex.test.TestApplication- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019/02/19-15:58 [main] INFO  com.jcex.test.TestApplication- No active profile set, falling back to default profiles: default
-2019/02/19-15:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
-2019/02/19-15:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
-2019/02/19-15:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
-2019/02/19-15:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
-2019/02/19-15:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
-2019/02/19-15:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
-2019/02/19-15:58 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$bd6a5209] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019/02/19-15:58 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6fe93db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019/02/19-15:58 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
-2019/02/19-15:58 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
-2019/02/19-15:58 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.14]
-2019/02/19-15:58 [main] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\java\jdk1.7\bin;D:\apache-cxf-3.2.5\bin;D:\java\jdk1.7\jre\binC:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\windows\system32\;C:\Program Files\TortoiseSVN\bin\;D:\apache-maven-3.5.4\bin;D:\mysql-8.0.12-winx64\bin;D:\Git\cmd;D:\Fiddler;.]
-2019/02/19-15:58 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
-2019/02/19-15:58 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2035 ms
-2019/02/19-15:58 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
-2019/02/19-15:58 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
-2019/02/19-15:58 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
-2019/02/19-15:58 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
-2019/02/19-15:58 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
-2019/02/19-15:58 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
-2019/02/19-15:58 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
-2019/02/19-15:58 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
-2019/02/19-15:58 [main] INFO  com.jcex.test.TestApplication- Started TestApplication in 4.396 seconds (JVM running for 5.067)
-2019/02/19-15:59 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019/02/19-15:59 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
-2019/02/19-15:59 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/03/13-16:59 [main] INFO  com.jcex.test.TestApplicationTests- Starting TestApplicationTests on YLMF-1804141658 with PID 215912 (started by Administrator in D:\test)
+2019/03/13-16:59 [main] DEBUG com.jcex.test.TestApplicationTests- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019/03/13-16:59 [main] INFO  com.jcex.test.TestApplicationTests- No active profile set, falling back to default profiles: default
+2019/03/13-16:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-16:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-16:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019/03/13-16:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-16:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-16:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019/03/13-16:59 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$1cc8c709] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-16:59 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$565d08db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-16:59 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/03/13-16:59 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
+2019/03/13-16:59 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
+2019/03/13-16:59 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
+2019/03/13-16:59 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-16:59 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
+2019/03/13-16:59 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-16:59 [main] INFO  com.jcex.test.TestApplicationTests- Started TestApplicationTests in 7.115 seconds (JVM running for 8.817)
+2019/03/13-16:59 [Thread-2] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:00 [main] INFO  com.jcex.test.TestApplication- Starting TestApplication on YLMF-1804141658 with PID 216480 (D:\test\target\classes started by Administrator in D:\test)
+2019/03/13-17:00 [main] DEBUG com.jcex.test.TestApplication- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019/03/13-17:00 [main] INFO  com.jcex.test.TestApplication- No active profile set, falling back to default profiles: default
+2019/03/13-17:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019/03/13-17:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019/03/13-17:00 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c611cd10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:00 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ffa60ee2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:00 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/03/13-17:00 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/03/13-17:00 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019/03/13-17:00 [main] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\java\jdk1.7\bin;D:\apache-cxf-3.2.5\bin;D:\java\jdk1.7\jre\binC:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\windows\system32\;C:\Program Files\TortoiseSVN\bin\;D:\apache-maven-3.5.4\bin;D:\mysql-8.0.12-winx64\bin;D:\Git\cmd;D:\Fiddler;.]
+2019/03/13-17:00 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/03/13-17:00 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1949 ms
+2019/03/13-17:00 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:00 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
+2019/03/13-17:00 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
+2019/03/13-17:00 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
+2019/03/13-17:00 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:00 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
+2019/03/13-17:00 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:00 [main] ERROR org.apache.catalina.util.LifecycleBase- Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1004)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.jcex.test.TestApplication.main(TestApplication.java:16)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001)
+	... 14 common frames omitted
+2019/03/13-17:00 [main] INFO  org.apache.catalina.core.StandardService- Stopping service [Tomcat]
+2019/03/13-17:00 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/03/13-17:00 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019/03/13-17:00 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:01 [main] INFO  com.jcex.test.TestApplication- Starting TestApplication on YLMF-1804141658 with PID 215744 (D:\test\target\classes started by Administrator in D:\test)
+2019/03/13-17:01 [main] DEBUG com.jcex.test.TestApplication- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019/03/13-17:01 [main] INFO  com.jcex.test.TestApplication- No active profile set, falling back to default profiles: default
+2019/03/13-17:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019/03/13-17:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019/03/13-17:01 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d372d93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:01 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46cb6f65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:01 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/03/13-17:01 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/03/13-17:01 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019/03/13-17:01 [main] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\java\jdk1.7\bin;D:\apache-cxf-3.2.5\bin;D:\java\jdk1.7\jre\binC:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\windows\system32\;C:\Program Files\TortoiseSVN\bin\;D:\apache-maven-3.5.4\bin;D:\mysql-8.0.12-winx64\bin;D:\Git\cmd;D:\Fiddler;.]
+2019/03/13-17:01 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/03/13-17:01 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1864 ms
+2019/03/13-17:01 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:01 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
+2019/03/13-17:01 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
+2019/03/13-17:01 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
+2019/03/13-17:01 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:01 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
+2019/03/13-17:01 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:01 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/03/13-17:01 [main] INFO  com.jcex.test.TestApplication- Started TestApplication in 3.758 seconds (JVM running for 4.573)
+2019/03/13-17:03 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/03/13-17:03 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/03/13-17:03 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 8 ms
+2019/03/13-17:03 [http-nio-8080-exec-1] INFO  com.jcex.test.web.jcextest- 输入参数....319012500072
+2019/03/13-17:03 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2019/03/13-17:03 [http-nio-8080-exec-1] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==>  Preparing: SELECT customer_reference_number FROM csd_order WHERE shipper_hawbcode=? 
+2019/03/13-17:03 [http-nio-8080-exec-1] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==> Parameters: 319012500072(String)
+2019/03/13-17:03 [http-nio-8080-exec-1] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- <==      Total: 1
+2019/03/13-17:31 [main] INFO  com.jcex.test.web.jcextestTest- Starting jcextestTest on YLMF-1804141658 with PID 212100 (started by Administrator in D:\test)
+2019/03/13-17:31 [main] DEBUG com.jcex.test.web.jcextestTest- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019/03/13-17:31 [main] INFO  com.jcex.test.web.jcextestTest- No active profile set, falling back to default profiles: default
+2019/03/13-17:31 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:31 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:31 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2019/03/13-17:31 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:31 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:31 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019/03/13-17:31 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$1ccf5278] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:31 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5663944a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:31 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:31 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
+2019/03/13-17:31 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
+2019/03/13-17:31 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
+2019/03/13-17:31 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:31 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
+2019/03/13-17:31 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:31 [main] INFO  com.jcex.test.web.jcextestTest- Started jcextestTest in 6.982 seconds (JVM running for 8.023)
+2019/03/13-17:31 [main] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2019/03/13-17:31 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==>  Preparing: SELECT customer_reference_number FROM csd_order WHERE shipper_hawbcode=? 
+2019/03/13-17:31 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==> Parameters: 1607192D415(String)
+2019/03/13-17:31 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- <==      Total: 1
+2019/03/13-17:31 [Thread-2] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:31 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} closed
+2019/03/13-17:33 [main] INFO  com.jcex.test.web.jcextestTest- Starting jcextestTest on YLMF-1804141658 with PID 212504 (started by Administrator in D:\test)
+2019/03/13-17:33 [main] DEBUG com.jcex.test.web.jcextestTest- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019/03/13-17:33 [main] INFO  com.jcex.test.web.jcextestTest- No active profile set, falling back to default profiles: default
+2019/03/13-17:33 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:33 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:33 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019/03/13-17:33 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/13-17:33 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/13-17:33 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019/03/13-17:33 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f9020316] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:33 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$329644e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/13-17:33 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:33 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
+2019/03/13-17:33 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
+2019/03/13-17:33 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
+2019/03/13-17:33 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:33 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
+2019/03/13-17:33 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/13-17:33 [main] INFO  com.jcex.test.web.jcextestTest- Started jcextestTest in 6.43 seconds (JVM running for 7.453)
+2019/03/13-17:33 [main] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2019/03/13-17:33 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==>  Preparing: SELECT customer_reference_number FROM csd_order WHERE shipper_hawbcode=? 
+2019/03/13-17:33 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==> Parameters: 319012500072(String)
+2019/03/13-17:33 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- <==      Total: 1
+2019/03/13-17:33 [Thread-2] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/03/13-17:33 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} closed
+2019/03/14-10:22 [main] INFO  com.jcex.test.web.jcextestTest- Starting jcextestTest on YLMF-1804141658 with PID 218124 (started by Administrator in D:\test)
+2019/03/14-10:22 [main] DEBUG com.jcex.test.web.jcextestTest- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019/03/14-10:22 [main] INFO  com.jcex.test.web.jcextestTest- No active profile set, falling back to default profiles: default
+2019/03/14-10:22 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/14-10:22 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/14-10:22 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019/03/14-10:22 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/03/14-10:22 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/03/14-10:22 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019/03/14-10:22 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$471ed2ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/14-10:22 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80b314be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/03/14-10:22 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 0 (http)
+2019/03/14-10:22 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/03/14-10:22 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019/03/14-10:22 [main] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\java\jdk1.7\bin;D:\apache-cxf-3.2.5\bin;D:\java\jdk1.7\jre\binC:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\windows\system32\;C:\Program Files\TortoiseSVN\bin\;D:\apache-maven-3.5.4\bin;D:\mysql-8.0.12-winx64\bin;D:\Git\cmd;D:\Fiddler;.]
+2019/03/14-10:22 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/03/14-10:22 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 3247 ms
+2019/03/14-10:22 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/03/14-10:22 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Context refreshed
+2019/03/14-10:22 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper- Found 1 custom documentation plugin(s)
+2019/03/14-10:22 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner- Scanning for api listing references
+2019/03/14-10:22 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/14-10:22 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader- Coercing to be of type string. This may not even be a scalar type in actuality
+2019/03/14-10:22 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader- Trying to infer dataType org.springframework.ui.ModelMap
+2019/03/14-10:22 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 53869 (http) with context path ''
+2019/03/14-10:22 [main] INFO  com.jcex.test.web.jcextestTest- Started jcextestTest in 7.66 seconds (JVM running for 8.701)
+2019/03/14-10:22 [main] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2019/03/14-10:22 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==>  Preparing: SELECT customer_reference_number FROM csd_order WHERE shipper_hawbcode=? 
+2019/03/14-10:22 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- ==> Parameters: 319012500072(String)
+2019/03/14-10:22 [main] DEBUG com.jcex.test.dao.mysqlMapper.UserRepository.selectcustomerreferencenumber- <==      Total: 1
+2019/03/14-10:22 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/03/14-10:22 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} closed

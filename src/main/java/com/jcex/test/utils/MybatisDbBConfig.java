@@ -14,6 +14,9 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 
 import javax.sql.DataSource;
 
+/**
+ * 注意basePackages 为这个数据源指定dao位置 这个包下 都会使用这个数据源
+ */
 @Configuration
 @MapperScan(basePackages = {"com.jcex.test.dao.sqlserverMapper"}, sqlSessionFactoryRef = "sqlSessionFactory2")
 public class MybatisDbBConfig {
