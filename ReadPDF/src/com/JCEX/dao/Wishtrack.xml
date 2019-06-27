@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.JCEX.dao.Wishtrack">
+
+
+	<select id="selectWishtrack" resultType="TrackMsg">
+		SELECT DISTINCT td.trk_id
+		id,
+		es.shipper_hawbcode DestinationNo,
+		(SELECT GROUP_CONCAT(DISTINCT
+		c.air_hawbcode) FROM tra_transport_business a
+		INNER JOIN
+		bsn_departbatch_express_jc b ON a.hawb_bs_id = b.bag_id AND
+		a.hawb_type = 'B'
+		INNER JOIN tra_transport_batch c ON a.tra_id =
+		c.tra_id WHERE b.bs_Id
+		=es.bs_id ) flightno,
+		es.channel_hawbcode mailno
+		,
+		DATE_FORMAT(td.track_occur_date, '%Y-%m-%d %T') times,
+		CASE WHEN IFNULL(td.track_area_description,'') ='' THEN bs.destination_countrycode ELSE td.track_area_description END  address,
+		td.track_code,
+		td.track_yw,
+		wz.webCode shippingstatus,
+		wz.webName logisticsremark,
+		wz.webDetailCode
+		detailcode,
+		bs.checkin_grossweight,
+		bs.destination_countrycode ,
+		ici.country_isocode,
+		es.customer_reference_number 
+		
+		FROM bsn_expressexport
+		es, bsn_business bs,
+		tak_trackingbusiness tbs, tak_trackdetails td,
+		(
+		SELECT a.webCode, a.webName, a.webDetailCode, b.track_enname,
+		b.track_code
+		FROM web_webzt a, tak_trackcode b WHERE a.track_code =
+		b.track_code AND
+		a.webtype = 'WISH' ) wz,
+		idd_country_iso ici
+		WHERE 1 = 1
+		AND es.bs_id = tbs.sys_bs_id
+		AND ici.country_code =
+		bs.destination_countrycode
+		AND es.bs_id = bs.bs_id
+		AND tbs.tbs_id =
+		td.tbs_id
+		AND (( td.track_code = wz.track_code ) OR ( td.track_yw =
+		wz.track_enname		))
+		-- AND IFNULL(td.CaiNiaoFaSong,'') = ''
+		AND td.track_occur_date &lt;=NOW()
+		AND
+		es.`shipper_hawbcode`=#{waybillnumber}  
+		 AND  (CASE WHEN (IFNULL(td.track_area_description,'')='') AND (track_yw = 'Delivered') THEN bs.destination_countrycode ELSE td.track_area_description END ) !='' 
+		ORDER BY
+		es.`shipper_hawbcode`,td.track_occur_date
+	</select>
+
+	<select id="selectWishStatus" resultType="Wishztb">
+		SELECT jccode_one,jccode_two
+		FROM wishztb WHERE billno=#{waybillnumber}
+	</select>
+
+</mapper>

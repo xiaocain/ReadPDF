@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+    
+   <!--  <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> -->
+   <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+  <property name="messageConverters">
+   <list >
+    <ref bean="mappingJacksonHttpMessageConverter" />
+   </list>
+  </property>
+ </bean>
+ <bean id="mappingJacksonHttpMessageConverter"
+  class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+  <property name="supportedMediaTypes">
+   <list>
+    <value>text/html;charset=UTF-8</value>
+   </list>
+  </property>
+ </bean> 
+   
+
+
+	<context:property-placeholder location="classpath:message.properties"/>
+	
+	<!-- 数据源配置, 使用 BoneCP 数据库连接池 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<!-- 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass -->
+		<property name="driverClassName" value="${jdbc.driver}" />
+
+	<!-- 	基本属性 url、user、password -->
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+
+		<!-- 初始化连接数量 -->
+		<property name="initialSize" value="${jdbc.pool.initialSize}" />
+	<!-- 	最小空闲连接数 -->
+		<property name="minIdle" value="${jdbc.pool.minIdle}" />
+		<!-- 最大活跃连接数 -->
+		<property name="maxActive" value="${jdbc.pool.maxActive}" />
+		<!-- 连接等待超时的时间，单位毫秒 -->
+		<property name="maxWait" value="${jdbc.pool.maxWait}" />
+	<!-- 	超过时间限制是否回收 -->
+		<property name="removeAbandoned" value="${jdbc.pool.removeAbandoned}" />
+	<!-- 	超过多长时间关闭链接，单位秒 -->
+		<property name="removeAbandonedTimeout" value="${jdbc.pool.removeAbandonedTimeout}" />
+	<!-- 	将当前关闭动作记录到日志 -->
+		<property name="logAbandoned" value="true" />
+		<!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒,这里120秒检测一次 -->
+		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.pool.timeBetweenEvictionRunsMillis}" />
+	<!-- 	一个连接在连接池中最小生存的时间，单位是毫秒，这里最小生存时间是120秒 -->
+		<property name="minEvictableIdleTimeMillis" value="${jdbc.pool.minEvictableIdleTimeMillis}" />
+
+		<property name="validationQuery" value="${jdbc.pool.testSql}" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+
+		<!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+		
+		<property name="poolPreparedStatements" value="true" /> 
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="20" /> 
+
+	<!-- 	配置监控统计拦截的filters -->
+		<property name="filters" value="stat" />
+	</bean>
+	
+<!-- 	Mybatis的工厂 -->
+	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<!-- 核心配置文件的位置 -->
+		<property name="configLocation" value="classpath:sqlMapConfig.xml"/>
+	</bean>
+
+	<!-- Mapper动态代理开发   扫描 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	<!-- 	基本包 -->
+		<property name="basePackage" value="com.JCEX.dao"/>
+	</bean>
+	
+	<!-- 注解事务 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- 开启注解 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	
+	
+	
+
+</beans>

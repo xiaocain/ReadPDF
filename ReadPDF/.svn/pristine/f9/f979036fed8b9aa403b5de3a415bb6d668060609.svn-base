@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="../js/jquery.form.js"></script> 
+    <script type="text/javascript">
+   
+    </script>
+</head>
+  
+  <body>
+    <p>Customer service</p>
+    <form action="/ReadPDF/upload" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="file" webkitdirectory mozdirectory/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <p>operating</p>
+    <form action="/ReadPDF/SHupload" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="SHfile" webkitdirectory mozdirectory/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>DD</p>
+    <form action="/ReadPDF/DJupload" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="DJfile"/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>B2C</p>
+    <form action="/ReadPDF/B2CExecl" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="B2Cfile" webkitdirectory mozdirectory/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>PCA</p>
+    <form action="/ReadPDF/PCAupload" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="PCAfile"/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>EuropeanTaxBill</p>
+    <form action="/ReadPDF/uploadEuropeanTaxBill" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="EuropeanTaxBillfile" webkitdirectory mozdirectory/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>EMS</p>
+    <form action="/ReadPDF/uploadEMS" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="EMSfile"/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>Wish</p>
+    <form action="/ReadPDF/uploadWishTrack" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="Wishfile"/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>MaBang</p>
+    <form action="/ReadPDF/uploadMaBang" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="MaBangfile"/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <p>DeletePDFContent</p>
+    <form action="/ReadPDF/DeletePDFContent" id="form1" enctype="multipart/form-data" method="post">
+    <input id="dir" type="file" name="DeletePDFContentfile" webkitdirectory mozdirectory/>
+    <input id="uploadDir" type="submit" value="submit">
+    </form>
+</html>
