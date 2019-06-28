@@ -33,7 +33,6 @@ public class Test {
 //        String[] array = str.trim().split("");
 //        System.out.println(array.length);
 //		System.out.println("split.length = " + split.length);
-		System.out.println("split.length = " + split.length);
 		String a="31 SWITCH SDSD PKG=3xCT Addressed,                32 05 33 8536699099 dadas";
 		String Seperatepattern = "31\\ [^0-9]+ PKG=.+32\\ [0-9]+\\ 33\\ [0-9]+";
 		Matcher matcher = Pattern.compile(Seperatepattern).matcher(a);
